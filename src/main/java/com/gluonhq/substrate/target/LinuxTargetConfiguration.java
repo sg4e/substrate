@@ -323,6 +323,7 @@ public class LinuxTargetConfiguration extends PosixTargetConfiguration {
         }
         answer.add("-lm");
         answer.add("-ldl");
+        answer.add("-Wl,--unresolved-symbols=ignore-all");
         return answer;
     }
 
